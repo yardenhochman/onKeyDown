@@ -10,8 +10,6 @@ import { compose } from 'lodash/fp';
 
 const ButtonKeyEvents = Component => props => <Component onKeyDown={onKeyDown({ keys: ['enter', 'space'] action: props.onClick })} {...props}>Button</Component>
 
-export const AccessibleMenuButton = compose(ButtonLikeElement)(props => <button {...props} />)
-
 ```
 
 Examples of different accessible components:
