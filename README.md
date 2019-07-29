@@ -23,3 +23,5 @@ const AccessibleModal = props => {
 ```
 
 This runs onClick prop (if defined) when 'enter' or 'space' keys are pressed on a given focused element.
+
+Example inspired by [WebAIM: Keyboard Accessibility](https://webaim.org/techniques/keyboard/)
