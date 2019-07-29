@@ -6,8 +6,9 @@ easy control over keyboard events
 import React from 'react';
 import isKeyPressed from './isKeyPressed';
 
-const KeyboardAccessibleButton = props => <button onKeyDown={isKeyPressed({ keys: ['enter', 'space'] action: props.onClick }) {...props}>Regular Button</button>
+const KeyboardAccessibleButton = props => <button onKeyDown={isKeyPressed({ keys: ['enter', 'space'] action: props.onClick }) {...props}>Button</button>
 
+const KeyboardAccessibleLink = props => <a onKeyDown={isKeyPressed({ keys: ['enter'] action: props.onClick }) {...props}>Link</button>
 
 ```
 
