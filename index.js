@@ -49,7 +49,7 @@ const testEventFor = test => func => inputs => e => {
   return false; 
 };
 
-export const isKeyPressed = testEventFor(keysMismatch)(({ keys, action }) => e => {
+export const onKeyDown = testEventFor(keysMismatch)(({ keys, action }) => e => {
   e.preventDefault();
   if (isFunction(action)) {
     action(e);
