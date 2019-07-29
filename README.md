@@ -1,6 +1,21 @@
 # onKeyDown
 easy control over keyboard events
 
+lets say we wanted to make some elements activate onClick events when they are focused and the user presses enter.
+
+```javascript 
+import React from 'react';
+import onKeyDown from './onKeyDown';
+import { compose } from 'lodash/fp';
+
+const ButtonKeyEvents = Component => props => <Component onKeyDown={onKeyDown({ keys: ['enter', 'space'] action: props.onClick })} {...props}>Button</Component>
+
+export const AccessibleMenuButton = compose(ButtonLikeElement)(props => <button {...props} />)
+
+```
+
+Examples of different accessible components:
+
 ```javascript 
 
 import React from 'react';
